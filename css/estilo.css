@@ -1,0 +1,276 @@
+*{ /* formatação geral, para todas as tags "padronização do site" */
+	margin: 0; /* espaçamento de margem */
+	padding: 0; /* espaçamento interno */
+}
+
+body{ /* Aplica formatação no corpo da pagina "padronização do site"*/ 
+	font-family: "Trebuchet MS", Helvetica, sans-serif; /* Define a familia de fontes utilizadas, subistituando pela familia casa navegador nao tenha*/
+	background: #fff url(../imagens/fundo.png) repeat-x ; /* define cor de fundo caso imagem nao carregue e aplica imagem de fundo repedindo somente na lateral no topo*/
+
+}
+
+#container{ /* cria o container para o cabelhaço principal do site, aplica esta fomratação no container com este id*/
+	width: 750px; /* Define a largura do container*/
+	margin: 0 auto; /* aplica margem vertical e horizontal como automartica, ou seja centraliza o container automaticamente*/
+}
+
+#topo{ /* Aplica a formatação dentro do container do cabeçalho */
+	height: 150px; /* Define o tamanho do container com este ID */
+	background: url(../imagens/detalhe-topo.png) no-repeat right top; /* insere o logo do site, para a direita sem repetir */
+	padding-top: 25px; /* define espaçamento interno entre os conteudos */
+}
+
+.logo{ /* criação do logo dentro do ID topo*/
+	width: 152px; /* define a largura do container com esta class*/
+	height: 66px; /*define a altura do container com esta class*/
+	background: url(../imagens/logo.png) no-repeat center top; /* insere o logo a cima no centro sem repetir */
+	text-indent: -3000px; /* faz a identação do texto a esquerda ou direta (+/-) para esconder um texto por questões de acessibilidade ou outras razoes*/
+}
+
+/**********
+Barra de navegação topo do site, menu de navegação
+**********/
+a:hover, a:visited { /*padronização dos Links dobreposto e visitados*/
+	color: #b10333;/*insere cor de link*/
+	padding: 2px; /*define espaçamento interno*/
+}
+
+a:hover{/*padronização dos links sobrepostos pelo mouse*/
+	color: #e50040; /* insere cor no link sobreposto pelo mouse* */
+}
+
+ul{ /* formatação geral para todas as <ul>*/
+	margin: 0; /* tira margem padrao */
+	padding: 0; /* tira espaçamento interno padrão*/
+	list-style: none; /* remove os indicadores da lista */
+
+}
+
+#topo ul{ /*aplica formatações nas ul's com este ID*/
+	background: #b10333; /*insere cor de fundo na UL com este ID*/
+	margin-top: 30px;  /*aplica espaçamento de margem superior*/
+	float: left; /* alinha / flutua / psoiciona os conteudos do id a esquerda*/
+}
+
+#topo ul li{ /* aplica formatações em todas as ul e li's no container copm este ID*/
+	float: left; /*alinha / flutua os conteudos do container a esquerda */
+
+}
+
+#topo ul a{ /* aplica formatação nos links dentro da UL do container deste  ID*/
+	font-size: 0.9em; /* ajusta o tamaanho do texto de acordo com o tamanho do container pai*/
+	display: block; /* Transforma os elementos inline em blocos */
+	padding: 0.5em 1.5em; /* define o espaçamento interno do container de acordo com o tamanho do container pai definindo espaçamento primeiro pela vertical e depois horizontal */
+	line-height: 2.1em; /* define o tamanho da linha de texto de acordo com o container pai */
+	text-decoration: none; /* remove a decoração do link(underline);*/
+	color: #fff;/* aplicar cor de texto, no link no caso*/
+	background: url(../imagens/divisor.png) no-repeat left center; /* insire o divisor entre os links da barra de navegação*/
+}	
+
+#topo ul .primeiro a { /*aplica formatação no container deste ID com uma UL com esta classe que contenha link*/
+	background: none; /* remove o primerio divisor da barra de navegação */
+}
+
+#topo ul a:hover{ /* aplica formatação quando cursor estiver sobre os links dentro do ID com descendente desta UL */
+	color: #69001d; /* aplica cor no texto quando cursos passar sobre o texto */
+}
+
+.home #navegacao a#home,
+.brasil #navegacao a#brasil,
+.internacional #navegacao a#internacional,
+.economia #navegacao a#economia,
+.saude #navegacao a#saude,
+.ciencia #navegacao a#ciencia,
+.fotos #navegacao a#fotos { /* esquema de descedencia para aplicar formatação em uma tag, id ou classe em especifico */
+	/* esquema para deixar pagina atual marcada no menu de navegação */
+	color: #69001d; /* mudar cor do texto*/
+	background: #de003e; /*insere cor de fundo*/
+	cursor: text; /*define o formato do cursor para tipo texto*/
+}
+
+/****************************
+CONFIGURA LAYOUT DE 3 COLUNAS
+****************************/
+
+#conteudo{ /* aplica formatação no no conteudo da pagina abaixo da barra de navegação container antes das 3 divs de coluna*/
+	margin-top: 60px; /* Aplica margem Superior*/
+	background: #f5f5f5; /* Aplica cor de fundo*/
+} 
+/*pagina Home 3 colunas*/
+#tres-colunas #primario{ /* aplica formatações no conteudo principal*/
+	width: 270px; /* define a largura do container*/
+	float: left; /* ALinha/flutua ocontainer(bloco) para a esquerda*/
+	margin: 0 0 20px 195px; /* Esquema de espaçamento para organizar a ordem dos conteudos por questões de acessibilidade*/
+}
+/*pagina brasil 2 colunas*/
+#duas-colunas #primario{ /* aplica formatações no conteudo principal*/
+	width: 555px; /* define a largura do container*/
+	float: left; /* ALinha/flutua ocontainer(bloco) para a esquerda*/
+	margin: 0 0 20px 195px; /* Esquema de espaçamento para organizar a ordem dos conteudos por questões de acessibilidade*/
+}
+/*pgina de foto 1 coluna*/
+#uma-coluna #primario{
+	width: 750px; /* define a largura do container*/
+	float: left; /* ALinha/flutua ocontainer(bloco) para a esquerda*/
+	margin: 0 0 20px 0; /* Esquema de espaçamento para organizar a ordem dos conteudos por questões de acessibilidade*/
+}
+
+
+#secundario{ /* aplica formatações no conteudo secundario*/
+	width: 270px; /* define a largura do container*/
+	float: left;/* ALinha/flutua ocontainer(bloco) para a esquerda*/
+	margin: 0 0 20px 0; /* Esquema de espaçamento para organizar a ordem dos conteudos por questões de acessibilidade*/
+}
+
+
+
+#lateral{ /* 180 aplica formatações no conteudo laretal*/
+	width: 180px; /* define a largura do container*/
+	float: left;/* ALinha/flutua ocontainer(bloco) para a esquerda*/
+	margin: 0 0 20px -750px; /* Esquema de espaçamento para organizar a ordem dos conteudos por questões de acessibilidade*/
+}
+
+
+/**********************
+PADRONIZAÇÃO DAS CAIXAS
+**********************/
+
+.caixa{  /* Padronização geral das caixas de conteudo*/
+	background: #f3f3f3 url(../imagens/fundo-caixa.png); /* Insere cor e imagem de fundo*/
+	margin: 10px 0; /* Define espaçamento externo de margem de 10px vertical e 0 horizontal*/
+	padding: 5px; /* Define espaçamento interno do bloco entre texto eankinha da caixa*/
+}
+
+.caixa-conteudo{
+	background: #fff; /* Insere cor de fundo*/
+	padding: 5px; /* Define o espaçamento interno entre o texto ea linha do bloco*/
+	margin-top: 5px; /* Define o espaçamento externo superior*/
+
+}
+
+h2{ /* Aplica formatação em todas as TAGS h2*/
+	font-size: 1.1em; /* Define o tamanho do texto de acordo com o tamanho do container pai*/
+	background: #294c71; /*Aplica cor de Fundo*/
+	color: #fff; /* Aplica cor de Texto*/
+	padding: 5px; /* Define o espaçamento interno do container*/
+	text-align: center; /*Alinha o texto ao centro do container*/
+}
+
+/*************************
+FORMATAÇÃO DO MENU LATERAL
+*************************/
+
+#lateral ul a{ /*aplica formatação direta nos Links dentro do ID lateral*/
+	font-size: 0.9em; /* Define o tamanho do Texto de acordo com o tamanho do container pai*/
+	padding: 3px; /*Define o espaçamento interno */
+	display: block; /* Transforma o Elemento inline em Block = uma div*/
+	line-height: 30px;/* Define o espaçamento da linha entre o bloco eo texto*/
+	text-decoration: none; /* Remove marcadores e underlines padroes*/
+	color: #000; /* Define a Cor do Texto*/
+}
+
+#lateral ul a:hover{ /* Aplica formatação quando cursor estiver posicionado emcima do elemento*/
+	color: #a1a1a1; /*Aplica cor de Texto*/
+	background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center; /* Aplica cor de imagem de fundo sem repetir posicionado ao centro na esquerda*/
+	padding-left: 20px; /* Define espaçamento interno a esquerda*/
+}
+
+label{ /*Padronização de Todas as Labels*/
+	display: block; /* Transforma os elementos inline em blocos*/
+	cursor: pointer; /* Define o tipo do cursor quando estiver sobre o conteudo*/
+
+}
+
+input.submit{ /* Padronização de todos os dos Inputs com esta class*/
+
+	font-size: 0.9em; /* Define o Tamanho da fonte de acordo com o tamanho do container pai*/
+	color: #fff; /* Insere cor de texto*/
+	width: 125px; /* Define o tamamho do campo de input*/
+	background-color: #b10333;/* Define cor de Fundo*/
+	border: 2px solid #870529;
+	cursor: pointer; /* muda o ponteiro do mouse quando estiver sobreposto por ele*/
+}
+
+/*****************
+FORMARANDO IMAGENS
+*****************/
+
+img.imagem-principal{ /* padronização de todas as tags img */
+	border: 2px solid #dfdfdf;/*insere bordas em todas as imagens */
+}
+
+/*********************
+FORMARTANDO CABEÇALHOS
+*********************/
+h3{
+	text-transform: uppercase; /* Define o texto com caixa alta*/
+	display: inline; /*transforma o elemento de bloco em inline*/
+	font-size: 0.8em; /* define o tamanho da fonte de acordo com o tamanjo do container pai.*/
+	padding: 3px; /* Define espaçamento interno do bloco entre texto ea linha da caixa*/
+
+}
+
+.destaque h3{ /* edita todos os h3 que estiverem dentro da classe destaque*/ 
+	background: #b10333; /* Define cor de fundo*/
+	color: #fff; /* define a cor da fonte*/
+}
+
+.entrevista h3{ /* edita todos os h3 que estiverem dentro da classe destaque*/ 
+	background: #de003e; /* Define cor de fundo*/
+	
+}
+
+
+/**************************
+FORMATANDO LISTA DE NOTICIA
+**************************/
+
+#lista-noticias li {/*formata todas as LI's dentro do ID lista-noticias */
+	padding: 2px; /*define espaçamento interno para todos os lados*/
+	border-bottom: 1px solid #ccc;  /* insere borda inferior*/
+	height: 62px; /*define a altura */
+}
+
+#lista-noticias li a img{ /*formata as imagens que estão nesta ordem de precedencia */
+	float: left; /* alinha/flutua os elementos a esquerda */
+	margin: 5px /* define o espaçamento externo de margem*/
+
+}
+
+#lista-noticias li a { /* aplica formatação no link de acordo com a ordem de precedencia */
+	text-decoration: none; /*remove formatação padrão de link */
+	font-size: 0.8em; /* aplica o tamanho da fonte de acordo com o tamnho do container pai*/
+
+}
+
+#lista-noticias li a h3{
+	font-size: 0.8em; /* define o tamanho da fonte de acordo com o tamanho do container pai*/
+	padding: 0; /* remove espaçamento interno*/
+	color: #3e7ab9; /* aplicar cor de fonte*/
+}
+
+#lista-noticias li a p{
+	font-size: 0.7em;
+	color: #000; /*define cor de texto*/
+}
+
+#lista-noticias li:hover{ /*formatação é aplicada quando estiver sobre o cursor*/
+	background: #eee; /*define cor de fundo*/
+	cursor: pointer; /* muda o cursor para ponteiro*/
+}
+/***********
+ RODAPÉ
+***********/
+
+#container-rodape{
+	background: #294c71; /* Define cor de fundo*/
+	padding: 20px; /* Define espaçamento Interno*/
+}
+
+#rodape{
+	width: 750px;/* Define a largura do container*/
+	margin: 0 auto; /* alinha a margem (espaço externo do container) verticalmente e horizontalmente(auto)*/
+	color: #fff; /*define a cor de texto*/
+	text-align: center; /* Alinha o texto ao centro*/
+}
+

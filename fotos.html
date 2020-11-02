@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+	
+		<title>Notícias Cidade - Seu site de noticías</title>
+
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	</head>
+
+	<body id="uma-coluna" class="fotos">
+		<!--Iniccio Container -->
+		<div id="container">
+			<div id="topo">
+				<h1 class="logo">Notícias Cidade</h1> <!--texto inserido por questão de acessibilidade, pois leitores de tela não lêem imagens, e tambem caso o CSS não carregue a imagem sera substituida pelo texto-->
+
+				<!--Inicio barra de navegação-->
+				<ul id="navegacao"><!--undernedList/lista nao ordenada--> 
+					<!-- li = list item/ item da lista <a> = link -->
+					<li class="primeiro"><a id="home" href="index.html">Home</a></li>
+					<li><a id="brasil" href="brasil.html">Brasil</a></li>
+					<li><a id="internacional" href="internacional.html">Internacional</a></li>
+					<li><a id="economia" href="economia.html">Economia</a></li>
+					<li><a id="saude" href="saude.html">Saúde</a></li>
+					<li><a id="ciencia" href="ciencia.html">Ciência</a></li>
+					<li><a id="fotos" href="fotos.html">Fotos</a></li>
+				</ul><!--Fim barra de navegação-->
+			</div>
+
+				<!--Inicio Conteudo -->
+				<div id="conteudo">
+				<!-- Inicio Colunas da pagina -->
+				<<div id="primario"><!-- Coluna Principal-->
+					<div class="caixa destaque">
+						
+						<h2>Destaque</h2>
+						
+						<div class="caixa-conteudo">
+							
+							<h3>Nova Legislação</h3>
+							
+							<img class="imagem-principal" src="imagens/taxi.jpg" width="100%"><!-- utiliza 100% do espaçamento disponivel dentro desta DIV -->
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p>
+							<a href="">Leia mais..</a>
+						</div>
+					</div>
+
+					<div class="caixa"> <!-- parte mundo em div principal -->
+						
+						<h2>Mundo</h2>
+						<div class="caixa-conteudo">
+							
+							<ul id="lista-noticias"><!-- Lista nao ordenada/ undernedlist-->
+								<li>
+									<a href="">
+										<img src="imagens/tecnologia.jpg" width="80">
+										<h3>Novas Tecnologias!</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitr...</p>
+									</a>
+								</li><!--list item / item da lista -->
+								<li>
+									<a href="">
+										<img src="imagens/tecnologia.jpg" width="80">
+										<h3>Novas Tecnologias!</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="imagens/tecnologia.jpg" width="80">
+										<h3>Novas Tecnologias!</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="imagens/tecnologia.jpg" width="80">
+										<h3>Novas Tecnologias!</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						
+							
+							
+						</div>
+					</div>
+
+				</div> <!-- conteudo principal vem primeiro por questões de acessibilidade de leitores de tela -->
+		
+		</div><!-- fim container-->
+		
+		<!--Inicio roda pé-->
+		<div id="container-rodape" style="clear: both;"> <!-- Limpa o fuxo dos elementos futuantes-->
+			<div id="rodape">
+				&copy; Copyright 2000-2020 Notícias da Cidade
+			</div>
+		</div><!--Fim Rodepé-->
+		<!-- &copy; é a TAG dos Direitos Autorais-->
+
+	</body>
+
+</html>
